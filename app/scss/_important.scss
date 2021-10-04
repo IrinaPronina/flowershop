@@ -1,0 +1,88 @@
+.double {
+
+  padding: 75px 0 75px 0;
+  position: relative;
+  // .double__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .double__pic
+
+  &__pic {
+    padding: 0 25px;
+  }
+
+  // .double__img
+
+  &__img {
+    border-radius: 30px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  // .double__desc
+
+  &__desc {
+    position: relative;
+  }
+
+  // .double__title
+
+  &__title {}
+
+  // .double__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 2.5;
+    font-weight: 400;
+  }
+
+  &__leave {
+    position: absolute;
+  }
+}
+
+.important {
+  padding: 150px 0 75px 0;
+
+  &__leave{
+        bottom: 0;
+    right: 0;
+  }
+
+  &__decor{
+    position: relative;
+    z-index: 2;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/dots.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: -62px;
+      left: -32px;
+      width: 228px;
+      height: 145px;
+    }
+  }
+}
+
+.decor__leave{
+  bottom: 35px;
+  left: 0;
+}
+
+
+.campaign{
+  padding: 150px 0;
+}
+

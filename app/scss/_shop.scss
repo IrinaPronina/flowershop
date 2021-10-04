@@ -1,0 +1,138 @@
+.shop {
+  background-color: $background;
+  padding: 120px 100px;
+
+  // .shop__title
+
+  &__title {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+
+  // .shop__inner
+
+  &__inner {}
+
+  // .shop__filter
+
+  &__filter {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  // .shop__filter-item
+
+  &__filter-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  // .shop__filter-btn
+
+  &__filter-btn {
+    font-size: 18px;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: $hover;
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 17px;
+      }
+    }
+  }
+
+  // .shop__slider
+
+  &__slider {}
+}
+
+
+.slider-body {
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  // .slider-body__slide
+
+  &__slide {
+    padding: 0 15px;
+  }
+
+  // .slider-body__imgbox
+
+  &__imgbox {
+    max-width: 262px;
+  }
+
+  // .slider-body__img
+
+  &__img {
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    height: 300px;
+    width: 100%;
+  }
+
+  // .slider-body__title
+
+  &__title {
+    font-size: 20px;
+    color: $dark;
+    margin-bottom: 5px;
+  }
+
+  // .slider-body__price
+
+  &__price {
+    font-size: 20px;
+    color: $accent;
+  }
+}
+
+.slick {}
+
+.mix {}
+
+.category-deals {}
+
+.slick-prev {
+  background-image: url(../images/slider-arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -70px;
+  right: 93px;
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+  font-size: 0;
+}
+
+.slick-next {
+  background-image: url(../images/slider-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -70px;
+  right: 15px;
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+  font-size: 0;
+}

@@ -1,0 +1,127 @@
+.main-page {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $background;
+
+  // .main-page__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 70px 0;
+  }
+
+
+  // .main-page__left
+
+  &__left {
+    max-width: 560px;
+    padding-top: 100px;
+  }
+
+  // .main-page__slogan
+
+  &__slogan {
+    font-size: 14px;
+    letter-spacing: 7px;
+    color: $accent;
+    margin-bottom: 30px;
+  }
+
+  // .main-page__title
+
+  &__title {
+    font-weight: 500;
+    color: $dark;
+    margin-bottom: 30px;
+  }
+
+  // .main-page__accent
+
+
+  // .main-page__btns
+
+  &__btns {
+    display: flex;
+  }
+
+
+
+  // .main-page__btn
+
+  &__btn {
+    margin-right: 20px;
+  }
+
+  // .main-page__video
+
+  &__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+      .main-page__video-btn{
+        fill: $accent;
+      }
+      .main-page__video-img{
+        background-color: transparent;
+        border: 1px solid $accent;
+      }
+      .main-page__watch{
+        text-decoration: none;
+      }
+    }
+  }
+
+  // .main-page__video-btn
+
+  &__video-btn {
+    fill: $white;
+    transition: fill ease 0.3s;
+  }
+
+  &__video-img {
+    width: 40px;
+    height: 40px;
+    background-color: $accent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    transition: all ease 0.3s;
+  }
+
+  // .main-page__watch
+
+  &__watch {
+    font-size: 18px;
+    color: $dark;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+  }
+
+
+
+  // .main-page__right
+
+  &__right {}
+
+
+
+  // .main-page__img
+
+  &__img {position: relative;
+    z-index: 2;
+  }
+
+  &__space {
+    position: absolute;
+    top: 138px;
+    right: 120px;
+    z-index: 1;
+  }
+}

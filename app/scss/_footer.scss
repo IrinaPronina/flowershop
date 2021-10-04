@@ -1,0 +1,148 @@
+.footer {
+
+  background-color: $background;
+  padding: 80px 66px;
+  position: relative;
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  // .footer__about
+
+  &__about {
+    max-width: 386px;
+    flex: 0 0 40%;
+  }
+
+  // .footer__logo
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  // .footer__text
+
+  &__text {
+    color: $dark;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-bottom: 50px;
+  }
+
+  // .footer__network
+
+  &__network {
+    display: flex;
+    align-items: center;
+  }
+
+  // .footer__network-item
+
+  &__network-item {
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+
+  // .footer__network-link
+
+  &__network-link {
+    background-color: $white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+
+    &:hover{
+      background-color: $accent;
+      .footer__network-icon{
+        fill: $white;
+      }
+    }
+  }
+
+  // .footer__network-icon
+
+  &__network-icon {
+    fill: $dark;
+    transition: all ease 0.3s;
+  }
+
+  // .footer__menu
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 60%;
+    flex-wrap: wrap;
+  }
+
+  // .footer__col
+
+  &__col {
+  }
+
+  // .footer__title
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: $dark;
+  }
+
+  // .footer__list
+
+  &__list {}
+
+  // .footer__item
+
+  &__item {
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: $hover;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 17px;
+      }
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    color: $dark;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 2.5;
+  }
+
+  &__leave{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.container {}
+
+.logo {}

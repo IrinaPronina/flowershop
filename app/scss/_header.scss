@@ -1,0 +1,97 @@
+.header {
+  background-color: $background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+
+  // .header__body
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 140px;
+  }
+
+  // .header__column
+
+  &__column {}
+
+  // .header__logo
+
+  &__logo {}
+}
+
+.header-menu {
+
+  display: flex;
+
+  // .header-menu__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .header-menu__item
+
+  &__item {
+
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: $hover;
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 17px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+
+  // .header-menu__link
+
+  &__link {
+    color: $dark;
+    letter-spacing: 2%;
+    
+  }
+}
+
+.header-control {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  // .header-control__cart
+
+  &__cart {
+    width: 13px;
+    height: 15px;
+  }
+
+  // .header-control__search
+
+  &__search {
+    width: 17px;
+    height: 17px;
+  }
+}
